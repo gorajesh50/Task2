@@ -1,0 +1,62 @@
+
+<html>
+<head>
+    <title>
+        Crud Operation With JS
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 	<h2>
+        Simple Crud using JS
+		</h2>
+    <table>
+        <tr>
+            <td>
+			<!--<button id="myBtn">Add User</button>
+			<div id="myModal" class="modal">
+			<div class="modal-content">-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="o">
+                    <div>
+                        <label>User Id</label>
+                        <input type="text" name="user_id" id="user_id">
+                    </div>
+					<div>
+                        <label>User Name</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                  
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                  
+                    <div>
+                        <input class= "close" type="submit" value="Submit">
+                    </div>
+                </form>
+			<!--</div>
+         	</div>-->
+            </td>
+            <td>
+                <table class="list" id="userList">
+                    <thead>
+                        <tr>
+							<th>User Id</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
